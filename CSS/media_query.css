@@ -2,12 +2,28 @@
     .navbar{
         left:-270px;
     }
+    .navbar.open_toggle{
+        left:0;
+    }
+    .navbar .nav_toggle{
+        display: flex;
+        left: 30px;
+    }
+    .navbar .nav_toggle.open_toggle{
+        left: 300px;
+    }
     .main_content{
         padding-left: 0px;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;
         margin-left: 0px;
+    }
+    .section{
+        left:0px;
+    }
+    .section.open_toggle{
+        left:270px;
     }
 }
 

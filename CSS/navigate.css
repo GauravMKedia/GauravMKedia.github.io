@@ -25,6 +25,7 @@ ul{
     align-items: center;
     z-index: 10;
     border-right: 1px solid var(--bg-black-50);
+    transition: all 0.5s ease;
 }
 
 .navbar .logo{
@@ -78,28 +79,32 @@ ul{
 }
 
 .navbar .nav_toggle{
-    height: 40px;
+    height: 45px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
-    left: 300px;
-    top:20px;
+    left: 30px;
+    top:30px;
     border-radius: 5px;
     background: var(--bg-black-100);
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
 }
 
 .navbar .nav_toggle span{
+    /* content:" "; */
     height: 2px;
     width: 18px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
 }
-
+.navbar .nav_toggle.open_toggle span{
+    background-color: transparent;
+}
 .navbar .nav_toggle span::before{
     content: " ";
     height: 2px;
@@ -108,6 +113,24 @@ ul{
     position: absolute;
     top:-6px;
     left:0px;
+    /* z-index: 10; */
+}
+.navbar .nav_toggle.open_toggle span::before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.navbar .nav_toggle span::after{
+    content: " ";
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top:6px;
+    left:0px;
+}
+.navbar .nav_toggle.open_toggle span::after{
+    transform: rotate(45deg);
+    top: 0;
 }
 
 .navbar .nav{
@@ -126,6 +149,11 @@ ul{
     color:var(--skin-color);
     /* background-color: green; */
 }
+
+.navbar .nav li a.unhover{
+    color: var(--text-black-900);
+}
+
 .navbar .nav li a{
     font-size: 14px;
     font-weight: 900;
@@ -139,17 +167,16 @@ ul{
     border-bottom: 2px solid var(--bg-black-50);
 }
 
-/* .navbar .nav li a.active{
-    color: var(--skin-color)
-} */
+.navbar .nav li a.active{
+    color:var(--skin-color);
+}
 
 .navbar .nav li a i{
     margin-right: 15px;
 }
 
-
+/* 
 .navbar .resume{
-    /* border: 2px solid red; */
     position: fixed;
     bottom:50px;
     background-color:var(--bg-black-900);
@@ -183,7 +210,7 @@ ul{
 .navbar .resume li a i{
     margin-right: 15px;
 }
-
+ */
 
 
 

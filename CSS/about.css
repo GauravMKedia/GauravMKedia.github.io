@@ -15,6 +15,7 @@
     color:var(--text-black-900);
     font-weight: 700;
     position: relative;
+    padding-top: 20px;
 }
 
 .section-title h2::before{

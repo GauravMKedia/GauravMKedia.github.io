@@ -10,7 +10,7 @@
     <!-- Fonts & Images -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <script src="https://kit.fontawesome.com/0a1470e582.js" crossorigin="anonymous"></script>
-    
+
 
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/navigate.css">
@@ -33,7 +33,9 @@
     <!-- JS -->
     <script src="./JavaScript/main.js" defer></script>
     <script src="./JavaScript/style.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./JavaScript/mail.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
 
 </head>
 
@@ -49,20 +51,19 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#home" class="btn_nav active"><i class="fa fa-home"></i> Home </a></li>
-                <li><a href="#about"><i class="btn_nav fa fa-user"></i> About</a></li>
-                <li><a href="#project"><i class="btn_nav fa fa-list"></i> Project</a><li>
-                <li><a href="#achievement"><i class="btn_nav fa fa-trophy"></i> Achievement</a><li>
-                <li><a href="#contact"><i class="btn_nav fa fa-comment"></i> Contact</a></li>
-                <li><a href="./Document/Gaurav_Kedia_Resume.pdf" target="n_blak" ><i class="btn_nav fa fa-file"></i> Resume</a></li>
-            </ul>
-            <ul class="resume">
+                <li><a href="#home" class="active" id="home_btn"><i class="fa fa-home"></i> Home </a></li>
+                <li><a href="#about" id="about_me"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="#project"><i class="fa fa-list"></i> Project</a></li>
+                <li><a href="#achievement"><i class="fa fa-trophy"></i> Achievement</a></li>
+                <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                <li><a href="./Document/Gaurav_Kedia_Resume.pdf" target="blank" class="resume"><i
+                            class="fa fa-file"></i> Resume</a></li>
             </ul>
         </div>
         <!-- Main Content -->
-        <div class="main_content" id="home">
+        <div class="main_content">
             <!-- Home Section -->
-            <section class="home section">
+            <section class="home active section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padding_15">
@@ -88,7 +89,7 @@
             <!-- Home Section End -->
 
             <!-- About Section Start -->
-            <section class="about section" id="about">
+            <section class="about section hidden" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd_side_15">
@@ -136,7 +137,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd_side_15">
-                                            <a href="./Document/Gaurav_Kedia_Resume.pdf" target="n_blak" class="btn">Download CV</a>
+                                            <a href="./Document/Gaurav_Kedia_Resume.pdf" target="n_blak"
+                                                class="btn">Download CV</a>
                                             <!-- <a href="#contact" class="btn hire-me">Hire Me</a> -->
                                         </div>
                                     </div>
@@ -247,7 +249,7 @@
             <!-- About Section End -->
 
             <!-- Project Section Start-->
-            <section class="project section" id="project">
+            <section class="project section hidden" id="project">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd_side_15">
@@ -261,7 +263,8 @@
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
                                 </div>
-                                <h4><a href="https://github.com/GauravMKedia/Maze_Game" target="blank">Maze Generator & Solver Website</a></h4>
+                                <h4><a href="https://github.com/GauravMKedia/Maze_Game" target="blank">Maze Generator &
+                                        Solver Website</a></h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero ullam possimus fugit
                                     et, fugiat cum.</p>
                             </div>
@@ -283,7 +286,7 @@
             <!-- Project Section End -->
 
             <!-- Achivement Section Start -->
-            <section class="achievement section" id="achievement">
+            <section class="achievement section hidden" id="achievement">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd_side_15">
@@ -313,7 +316,8 @@
                                 <div class="icon">
                                     <i class="fa fa-medal"></i>
                                 </div>
-                                <h4><a href="./Document/PICT-Pradnya'22-Gaurav-Kedia-certificate.pdf" target="blank">PICT Pradnya</a></h4>
+                                <h4><a href="./Document/PICT-Pradnya'22-Gaurav-Kedia-certificate.pdf"
+                                        target="blank">PICT Pradnya</a></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut pariatur ea
                                     maxime magnam cumque!</p>
                             </div>
@@ -346,7 +350,8 @@
                                 <div class="icon">
                                     <i class="fa fa-cloud"></i>
                                 </div>
-                                <h4><a href="./Document/IIISem_AIML_39_30DaysOfGoogleCloud.pdf" target="blank">Google Cloud</a></h4>
+                                <h4><a href="./Document/IIISem_AIML_39_30DaysOfGoogleCloud.pdf" target="blank">Google
+                                        Cloud</a></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut pariatur ea
                                     maxime magnam cumque!</p>
                             </div>
@@ -357,7 +362,8 @@
                                 <div class="icon">
                                     <i class="fa fa-android"></i>
                                 </div>
-                                <h4><a href="./Document/IIISem_AIML_39_AndroidBasicsinKotlin.pdf" target="blank">Android Jam</a></h4>
+                                <h4><a href="./Document/IIISem_AIML_39_AndroidBasicsinKotlin.pdf" target="blank">Android
+                                        Jam</a></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ut pariatur ea
                                     maxime magnam cumque!</p>
                             </div>
@@ -368,7 +374,7 @@
             <!-- Achivement Section End -->
 
             <!-- Contact Section Start -->
-            <section class="contact section" id="contact">
+            <section class="contact section hidden" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd_side_15">
@@ -418,39 +424,41 @@
                     <!-- Contact Forms -->
                     <div class="row"></div>
                     <div class="contact-form padd_side_15">
-                        <div class="row">
-                            <div class="form-item col-6 padd_side_15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Name">
+                        <form class="form_start" method="POST" action="send" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="form-item col-6 padd_side_15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name" name="name" required>
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd_side_15">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-item col-6 padd_side_15">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
+                            <div class="row">
+                                <div class="form-item col-12 padd_side_15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject"  name="subject" required>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd_side_15">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                            <div class="row">
+                                <div class="form-item col-12 padd_side_15">
+                                    <div class="form-group">
+                                        <textarea name="" class="form-control" id="" placeholder="Message" name="message" required></textarea>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd_side_15">
-                                <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                            <div class="row">
+                                <div class="form-item col-12 padd_side_15">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn">Send Message</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-item col-12 padd_side_15">
-                                <div class="form-group">
-                                    <button type="submit" class="btn">Send Message</button>
-                                </div>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -466,7 +474,7 @@
         <div class="style-switcher-toggle s-icon">
             <i class="fas fa-cog fa-spin"></i>
         </div>
-        <div class="day-night s-icon" >
+        <div class="day-night s-icon">
             <i class="fas"></i>
         </div>
         <h4>Theme Colors</h4>
