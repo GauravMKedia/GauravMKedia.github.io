@@ -1,5 +1,6 @@
 const form = document.getElementById("form_start");
-
+// console.log("Hello");
+// console.log(form);
 const formEvent = form.addEventListener("submit", (event) => {
     event.preventDefault();
     let mail = new FormData(form);

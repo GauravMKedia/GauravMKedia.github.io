@@ -44,11 +44,11 @@
 
 
 .animate_content_in{
-	animation: animate_in 2s ease;}
+	animation: animate_in 1s ease;}
 
 @keyframes animate_in{
 	30%{transform: scale(1, 0.02);}
-	60%{
+	60%{ 
 		transform: scale(0.2, 0.002);
         opacity: 1;
 		}
@@ -62,7 +62,7 @@
 }
 
 .animate_content_out{
-	animation: animate_out 2s ease;}
+	animation: animate_out 1s ease;}
 
 @keyframes animate_out{
 	0%{transform: scale(0, 0);

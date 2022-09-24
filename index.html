@@ -33,7 +33,12 @@
     <!-- JS -->
     <script src="./JavaScript/main.js" defer></script>
     <script src="./JavaScript/style.js" defer></script>
-    <script src="./JavaScript/mail.js" defer></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./JavaScript/mail_send.js" defer></script>
+    <!-- <script src="./JavaScript/mail.js" defer></script> -->
+    <!-- <script type="module" src="./server.js"></script> -->
+    <!-- <script src="./server.js" defer></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         referrerpolicy="no-referrer"></script>
 
@@ -424,7 +429,7 @@
                     <!-- Contact Forms -->
                     <div class="row"></div>
                     <div class="contact-form padd_side_15">
-                        <form class="form_start" method="POST" action="send" enctype="multipart/form-data">
+                        <form id="form_start" method="POST" action="mailto:gmkedia17@gmail.com" enctype="text/plain">
                             <div class="row">
                                 <div class="form-item col-6 padd_side_15">
                                     <div class="form-group">
@@ -433,28 +438,31 @@
                                 </div>
                                 <div class="form-item col-6 padd_side_15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" name="email" required>
+                                        <input type="email" class="form-control" placeholder="Email" name="email"
+                                            required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd_side_15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject"  name="subject" required>
+                                        <input type="text" class="form-control" placeholder="Subject" name="subject"
+                                            required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd_side_15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message" name="message" required></textarea>
+                                        <textarea name="" class="form-control" id="" placeholder="Message"
+                                            name="message" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd_side_15">
                                     <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
+                                        <button type="submit" class="btn" onclick="sendEmail()">Send Message</button>
                                     </div>
                                 </div>
                             </div>

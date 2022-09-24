@@ -35,7 +35,7 @@ for (let i = 0; i < totalNavList; i++) {
           navList[j].querySelector("a").classList.remove("unhover");
         }
         // console.log("Done");
-      },5000);
+      },3000);
     }
   }
   })
@@ -50,10 +50,10 @@ function openSection(elem) {
     if (allsec[x].classList.contains("active")) {
       allsec[x].classList.add("animate_content_in");
       // allsec[x].classList.add("fadeIn");
-      setTimeout(function () { allsec[x].classList.remove("animate_content_in"); }, 2000);
+      setTimeout(function () { allsec[x].classList.remove("animate_content_in"); }, 1000);
       // setTimeout(function() {allsec[x].classList.remove("fadeIn");}, 1500);
-      setTimeout(function () { allsec[x].classList.remove("active"); }, 2000);
-      setTimeout(function () { allsec[x].classList.add("hidden"); }, 1800);
+      setTimeout(function () { allsec[x].classList.remove("active"); }, 1000);
+      setTimeout(function () { allsec[x].classList.add("hidden"); }, 800);
       
     }
     else {
@@ -83,7 +83,7 @@ function anim_out() {
       // console.log(allsec[x].classList.length);
       allsec[x].classList.add("animate_content_out");
       // allsec[x].classList.add("fadeIn");
-      setTimeout(function () { allsec[x].classList.remove("animate_content_out"); }, 2200);
+      setTimeout(function () { allsec[x].classList.remove("animate_content_out"); }, 1200);
       // setTimeout(function() {allsec[x].classList.r
     }
   }
