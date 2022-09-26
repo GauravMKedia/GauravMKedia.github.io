@@ -255,3 +255,11 @@
     text-align: justify;
     color: var(--text-black-700);   
 }
+
+.youtube{
+    text-decoration: none;
+    color: var(--text-bg-black-900);
+}
+.youtube:hover{
+    color: var(--skin-color);
+}

@@ -43,10 +43,10 @@
 
 
 
-.animate_content_in{
-	animation: animate_in 1s ease;}
+.animate_content_out{
+	animation: animate_out 1s ease;}
 
-@keyframes animate_in{
+@keyframes animate_out{
 	30%{transform: scale(1, 0.02);}
 	60%{ 
 		transform: scale(0.2, 0.002);
@@ -61,10 +61,10 @@
     opacity: 1;}
 }
 
-.animate_content_out{
-	animation: animate_out 1s ease;}
+.animate_content_in{
+	animation: animate_in 1s ease;}
 
-@keyframes animate_out{
+@keyframes animate_in{
 	0%{transform: scale(0, 0);
         opacity: 0;
         }

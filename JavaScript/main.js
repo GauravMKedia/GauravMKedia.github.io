@@ -35,7 +35,7 @@ for (let i = 0; i < totalNavList; i++) {
           navList[j].querySelector("a").classList.remove("unhover");
         }
         // console.log("Done");
-      },3000);
+      },1500);
     }
   }
   })
@@ -48,9 +48,9 @@ function openSection(elem) {
   for (let x = 0; x < section_size; x++) {
     // console.log(allsec[x].classList);
     if (allsec[x].classList.contains("active")) {
-      allsec[x].classList.add("animate_content_in");
+      allsec[x].classList.add("animate_content_out");
       // allsec[x].classList.add("fadeIn");
-      setTimeout(function () { allsec[x].classList.remove("animate_content_in"); }, 1000);
+      setTimeout(function () { allsec[x].classList.remove("animate_content_out"); }, 1000);
       // setTimeout(function() {allsec[x].classList.remove("fadeIn");}, 1500);
       setTimeout(function () { allsec[x].classList.remove("active"); }, 1000);
       setTimeout(function () { allsec[x].classList.add("hidden"); }, 800);
@@ -69,21 +69,21 @@ function openSection(elem) {
   setTimeout(function () { 
     document.querySelector("#" + temp).classList.add("active"); 
     document.querySelector("#" + temp).classList.remove("hidden"); 
-  }, 2200);
-  setTimeout(anim_out, 2200);
+  }, 500);
+  setTimeout(anim_in, 500);
   
   // document.querySelector("#" + temp).classList.add("active");
 }
-function anim_out() {
+function anim_in() {
   // console.log("Hey");
   for (let x = 0; x < section_size; x++) {
     // console.log(allsec[x].classList);
     // console.log(allsec[x].length);
     if (allsec[x].classList.contains("active")) {
       // console.log(allsec[x].classList.length);
-      allsec[x].classList.add("animate_content_out");
+      allsec[x].classList.add("animate_content_in");
       // allsec[x].classList.add("fadeIn");
-      setTimeout(function () { allsec[x].classList.remove("animate_content_out"); }, 1200);
+      setTimeout(function () { allsec[x].classList.remove("animate_content_in"); }, 1200);
       // setTimeout(function() {allsec[x].classList.r
     }
   }

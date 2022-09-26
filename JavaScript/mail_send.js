@@ -1,14 +1,29 @@
 function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
-        Password: "uyapeodrxgtcwvea",
-        To: 'gmkedia17@gmail.com',
-        From: "gauravkedia1709@gmail.com",
-        Subject: "Sending Email using javascript",
-        Body: "Well that was easy!!",
-    })
+    const name = document.getElementById("name");
+    const email = document.getElementById("email");
+    const subject = document.getElementById("subject");
+    const message = document.getElementById("message");
+    console.log(name.value);
+    console.log(email.value);
+    console.log(subject.value);
+    console.log(message.value);
+    let check = "@gmail.com";
+    const mes = email.value;
+    if (name.value != "" && email.value != "" && subject.value != "" && mes.includes(check)) {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: name.value,
+            From: email.value,
+            Password: PASS,
+            To: EMAIL,
+            Subject: subject.value,
+            Body: message.value,
+
+        })
         .then(function (message) {
-            alert("mail sent successfully")
+            alert("mail sent successfully");
+            location.reload();
         });
+
+    }
 }
