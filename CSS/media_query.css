@@ -47,6 +47,15 @@
         flex: 0 0 50%;
         max-width:50%;
     }
+    .style-switcher-toggle{
+        display: none;
+    }
+    .navbar .logo a::before{
+        display: none;
+    }
+    .navbar .logo a::after{
+        display: none;
+    }
 }
 
 @media (max-width:767px){
