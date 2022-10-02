@@ -22,6 +22,7 @@ for (let i = 0; i < totalNavList; i++) {
     if(!a.classList.contains("resume")){
     if(funrunning===false){
       funrunning = true;
+      document.querySelector(".nav_toggle").click();
       for (let j = 0; j < totalNavList; j++) {
         navList[j].querySelector("a").classList.remove("active");
         navList[j].querySelector("a").classList.add("unhover");
