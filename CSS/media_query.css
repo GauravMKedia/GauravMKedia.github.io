@@ -22,9 +22,6 @@
     .section{
         left:0px;
     }
-    .section.open_toggle{
-        left:270px;
-    }
 }
 
 @media (max-width:991px){
