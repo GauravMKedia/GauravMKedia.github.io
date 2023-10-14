@@ -1,0 +1,32 @@
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffffcf;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px; /* Add border-radius for curved edges */
+    text-align: center; /* Center the buttons */
+    z-index: 10;
+ }
+ 
+ .popup p {
+    font-weight: bold; /* Make the font bolder */
+ }
+ 
+ .popup button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Add border-radius for curved edges */
+    transition: background 0.3s; /* Add hover effect transition */
+ }
+ 
+ .popup button:hover {
+    background: #007bff; /* Change background color on hover */
+    color: white;
+ }
+ 

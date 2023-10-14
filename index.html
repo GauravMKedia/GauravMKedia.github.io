@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./CSS/contact.css">
     <link rel="stylesheet" href="./CSS/media_query.css ">
     <link rel="stylesheet" href="./CSS/style_switcher.css">
+    <link rel="stylesheet" href="./CSS/hacktoberfest_popup.css">
 
     <!-- Themes Links -->
     <link rel="stylesheet" href="./CSS/color/color1.css" class="alternate" title="color1">
@@ -35,6 +36,7 @@
     <script src="./JavaScript/style.js" defer></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./JavaScript/mail_send.js" defer></script>
+    <script src="./JavaScript/hacktoberfest_popup.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
         referrerpolicy="no-referrer"></script>
 
@@ -42,6 +44,11 @@
 
 <body>
     <div class="main_container">
+        <div id="popup" class="popup">
+            <p>Would you like to contribute to Hacktoberfest?</p>
+            <button id="yesButton">Yes</button>
+            <button id="noButton">No</button>
+        </div>
         <!-- Side Navigation Bar -->
         <div class="navbar">
             <!-- Navbar -->
@@ -57,8 +64,8 @@
                 <li><a href="#project"><i class="fa fa-list"></i> Project</a></li>
                 <li><a href="#achievement"><i class="fa fa-trophy"></i> Achievement</a></li>
                 <li><a href="#contact" id="about_me"><i class="fa fa-comment"></i> Contact</a></li>
-                <li><a href="./Document/Gaurav_Kedia_Resume.pdf" target="blank" class="resume"><i
-                            class="fa fa-file"></i> Resume</a></li>
+                <li><a href="./Document/Gaurav_Kedia_Resume.pdf" target="blank" class="resume"><i class="fa fa-file"></i> Resume</a></li>
+                <!-- <li><a href="https://github.com/GauravMKedia/animation-collections" target="blank" class="resume"><i class="fa fa-file"></i> Hacktoberfest </a></li> -->
             </ul>
         </div>
         <!-- Main Content -->
